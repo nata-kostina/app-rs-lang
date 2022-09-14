@@ -7,7 +7,6 @@ import { Dropdown, Menu, Space } from 'antd';
 import { GameMode, TransitionEnum } from '../../types/types';
 import { NavigateState } from './../../types/types';
 import './styles.scss';
-import AudioCall from './../../pages/Games/AudiocallGame/index';
 
 const menuItems = [
   {
@@ -16,12 +15,6 @@ const menuItems = [
       state={GameMode.MENU_GAME}>Спринт
     </Link>,
   },
-  {
-    key: '1',
-    label: <Link to={`${RouteNames.GAMES}/${RouteNames.AUDIOCALL_GAME}`}
-      state={GameMode.MENU_GAME}>Аудиовызов
-    </Link>,
-  }
 ];
 const menu = (
   <Menu items={menuItems} />
