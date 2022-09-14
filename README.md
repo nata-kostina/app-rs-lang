@@ -1,5 +1,5 @@
 # RS Lang
-This is an application created for Russian speakers to learn English. The app includes the database of 3600 words, mini-games and statistics page.
+This is an application created for Russian speakers to learn English. The app includes a database of 3600 words, mini-games and a statistics page.
 
 ## Demo
 Here is a working live demo: https://rslang-nata-kostina.netlify.app/
@@ -10,7 +10,7 @@ Here is a working live demo: https://rslang-nata-kostina.netlify.app/
  - navigation through 6 section in the textbook
  - ability to add words to "Difficult words" section
  - ability to add words to "Learned words" section
- - output of statistitcs for Sprint game
+ - output of statistics for Sprint game
  
  
 ## Tech stack
