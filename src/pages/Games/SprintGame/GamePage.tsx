@@ -29,7 +29,7 @@ const GamePage = ({ setHasBeenFinished }: GamePageProps) => {
   return (
     <>
       <div className={'points'}>
-        <p className={'points__text'}>Очки:</p>
+        <p className={'points__text'}>Points:</p>
         <span className={'points__value'}>{points}</span>
       </div>
       {isArrEmpty ? <GameStatistics /> : <>

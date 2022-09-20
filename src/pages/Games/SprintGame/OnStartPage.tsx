@@ -22,7 +22,7 @@ const OnStartPage = () => {
     <div className={'on-start'}>
       <div className={'rules'}>
         <p>{Games.find((game) => game.id === 1)?.rules}</p>
-        <button className={`${'btn'} ${'btn_start'}`} type='button' onClick={onBtnClick}>Поехали!</button>
+        <button className={`${'btn'} ${'btn_start'}`} type='button' onClick={onBtnClick}>Go!</button>
       </div>
     </div>
   );

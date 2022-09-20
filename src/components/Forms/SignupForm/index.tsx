@@ -21,10 +21,10 @@ const SignupForm = ({ onFinish }: SignupFormProps) => {
       autoComplete="off"
     >
       <Form.Item
-        label="Имя"
+        label="Name"
         name="name"
         validateTrigger="onBlur"
-        rules={[rules.required('Введите имя')]}
+        rules={[rules.required('Enter your name')]}
       >
         <Input />
       </Form.Item>
@@ -33,30 +33,30 @@ const SignupForm = ({ onFinish }: SignupFormProps) => {
         label="Email"
         name="email"
         validateTrigger="onBlur"
-        rules={[rules.required('Введите e-mail'), rules.isEmailCorrect()]}
+        rules={[rules.required('Enter e-mail'), rules.isEmailCorrect()]}
       >
         <Input />
       </Form.Item>
 
       <Form.Item
-        label="Пароль"
+        label="Password"
         name="password"
         validateTrigger="onBlur"
-        rules={[rules.required('Введите пароль'), rules.isPasswordCorrect()]}
+        rules={[rules.required('Enter password'), rules.isPasswordCorrect()]}
       >
         <Input.Password />
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button type="primary" htmlType="submit">
-          Зарегистрироваться
+          Sign up
         </Button>
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-        <span>Уже есть аккаунт? </span>
+        <span>Already have account? </span>
         <Link to={RouteNames.AUTHORIZATION}>
-          Войти
+          Login
         </Link>
       </Form.Item>
     </Form>

@@ -20,7 +20,7 @@ const Login = () => {
   };
 
   const onLoginFailed = () => {
-    Modal.showErrorModal('Неверный e-mail или пароль.');
+    Modal.showErrorModal('Wrong email or password');
   }
 
   return (
@@ -36,8 +36,8 @@ const Login = () => {
 
             <>
               <div className={styles['redirection-info']}>
-                <p>Запрашиваемая страница доступна только авторизированным пользователям.</p>
-                <p>Пожалуйста, войди в свой аккаунт.</p>
+                <p>This page is available only for authorized users.</p>
+                <p>Please, login or sign up.</p>
               </div>
             </>
           }

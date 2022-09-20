@@ -24,30 +24,30 @@ const LoginForm = ({onFinish }: LoginFormProps) => {
       label="Email"
       name="email"
       validateTrigger="onBlur"
-      rules={[rules.required('Введите e-mail'), rules.isEmailCorrect()]}
+      rules={[rules.required('Enter e-mail'), rules.isEmailCorrect()]}
     >
       <Input autoComplete='off'/>
     </Form.Item>
 
     <Form.Item
-      label="Пароль"
+      label="Password"
       name="password"
       validateTrigger="onBlur"
-      rules={[rules.required('Введите пароль'), rules.isPasswordCorrect()]}
+      rules={[rules.required('Enter password'), rules.isPasswordCorrect()]}
     >
       <Input.Password />
     </Form.Item>
 
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
       <Button type="primary" htmlType="submit">
-        Войти
+        Login
       </Button>
     </Form.Item>
 
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-      <span>Еще не с нами? </span>
+      <span>Not with us? </span>
       <Link to={RouteNames.SIGNIN}>
-        Зарегистрируйся
+        Sign up
       </Link>
     </Form.Item>    
   </Form>

@@ -1,13 +1,13 @@
 import { MIN_PASSWORD_LENGTH } from "../data/constants";
 
 export const rules = {
-  required: (message: string = 'Обязательное поле') => {
+  required: (message: string = 'Required') => {
     return { required: true, message };
   },
   isEmailCorrect: () => {
-    return { pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g, message: 'Неверный формат e-mail' }
+    return { pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g, message: 'Wrong format' }
   },
   isPasswordCorrect: () => {
-    return { min: MIN_PASSWORD_LENGTH, message: 'Пароль должен содержать не менее 8 символов' }
+    return { min: MIN_PASSWORD_LENGTH, message: 'Password can\'t contain less than 8 symbols' }
   }
 }

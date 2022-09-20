@@ -12,7 +12,7 @@ const menuItems = [
   {
     key: '0',
     label: <Link to={`${RouteNames.GAMES}/${RouteNames.SPRINT_GAME}`}
-      state={GameMode.MENU_GAME}>Спринт
+      state={GameMode.MENU_GAME}>Sprint
     </Link>,
   },
 ];
@@ -28,24 +28,24 @@ const Navigation = () => {
   const location = useLocation();
   return (
     <nav id="nav" className='nav'>
-      <Link to={RouteNames.HOMEPAGE}>Главная</Link>
-      <Link to={RouteNames.TEXTBOOK}>Учебник</Link>
+      <Link to={RouteNames.HOMEPAGE}>Homepage</Link>
+      <Link to={RouteNames.TEXTBOOK}>Textbook</Link>
       <Dropdown overlay={menu}>
         <Link to={RouteNames.GAMES}>
-          <Space> Игры   </Space>
+          <Space> Games   </Space>
         </Link>
       </Dropdown>
-      <Link to={RouteNames.STATISTICS}>Статистика</Link>
+      <Link to={RouteNames.STATISTICS}>Statistics</Link>
       {
         isAuth ?
           <>
             <span className='greetings'>Hi, {user?.name}</span>
-            <button className={`${'btn'} ${'btn_logout'}`} type="button" onClick={handleLogoutClick}>Выйти</button>
+            <button className={`${'btn'} ${'btn_logout'}`} type="button" onClick={handleLogoutClick}>Logout</button>
           </> :
           <Link
             className={`${'btn'} ${'btn_login'}`}
             to={RouteNames.AUTHORIZATION}
-            state={{ mode: TransitionEnum.NORMAL, location: location.pathname } as NavigateState}> Войти</Link>
+            state={{ mode: TransitionEnum.NORMAL, location: location.pathname } as NavigateState}> Login</Link>
       }
     </nav >
   );

@@ -28,7 +28,7 @@ const Hero = () => {
         <div className={styles.wrapper}>
           <div className={styles.promo}>
             <div className={styles["soft-font-2"]}>
-              <div className={styles["title"]}>Учим Английский вместе с
+              <div className={styles["title"]}>Learn English with
                 <span className={styles["flex-top"]}>
                   <BgFlag width='250' height='160'>
                     RS Lang
@@ -45,27 +45,27 @@ const Hero = () => {
             >
               <motion.div variants={textAnimation} custom={1}>
                 <CheckCircle size='40' bgcolor='#ff6666' textcolor='#2b3c6b'>
-                  3600 слов
+                  3600 words
                 </CheckCircle>
               </motion.div>
               <motion.div variants={textAnimation} custom={2}>
                 <CheckCircle size='40' bgcolor='#b250fe' textcolor='#2b3c6b'>
-                  Выбор уровня сложности
+                  Possibility to choose difficulty level
                 </CheckCircle>
               </motion.div>
               <motion.div variants={textAnimation} custom={3}>
                 <CheckCircle size='40' bgcolor='#1ab9ff' textcolor='#2b3c6b'>
-                  Возможность индивидуализированной работы
+                  Individualized teaching
                 </CheckCircle>
               </motion.div>
               <motion.div variants={textAnimation} custom={4}>
                 <CheckCircle size='40' bgcolor='#e9a30d' textcolor='#2b3c6b'>
-                  Учебные игры
+                  Vocabulary games
                 </CheckCircle>
               </motion.div>
               <motion.div variants={textAnimation} custom={5}>
                 <CheckCircle size='40' bgcolor='#455b97' textcolor='#2b3c6b'>
-                  Прогресс изучения и статистика
+                  Learning progress and statistics
                 </CheckCircle>
               </motion.div>
             </motion.div>
@@ -74,15 +74,15 @@ const Hero = () => {
               whileInView="visible"
               variants={textAnimation}
               custom={6}
-              className={styles.slogan}>Учить язык - значит открыть новое окно в мир
+              className={styles.slogan}>Learn language is to open a new window into the world
             </motion.h2>
             <div style={{ marginTop: "7rem" }}></div>
             <div className={styles["flex-top"]}>
               <Link to={RouteNames.TEXTBOOK}>
-                <LinkButton bgcolor='#2b3c6b'>Давайте начнем</LinkButton>
+                <LinkButton bgcolor='#2b3c6b'>Let's go</LinkButton>
               </Link>
               <Link to={RouteNames.GAMES}>
-                <LinkButton bgcolor='#b250fe'>Играем и учим </LinkButton>
+                <LinkButton bgcolor='#b250fe'>Play and learn</LinkButton>
               </Link>
             </div>
           </div>

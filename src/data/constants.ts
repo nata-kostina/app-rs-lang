@@ -48,7 +48,7 @@ export const units: IUnit[] = [
 
 export const difficultWordsUnit: IUnit = {
   id: '7',
-  name: 'Мои сложные слова',
+  name: 'My difficult words',
   description: '',
   type: SectionEnum.DIFFICULT_WORDS,
   wordsNum: '',
@@ -57,13 +57,13 @@ export const difficultWordsUnit: IUnit = {
 export const UserDictNavItems: UserDictNavItem[] = [
   {
     id: '0',
-    name: 'Мои сложные слова',
+    name: 'My difficult words',
     type: SectionEnum.DIFFICULT_WORDS,
     route: RouteNames.DIFFICULT_WORDS,
   },
   {
     id: '1',
-    name: 'Мои изученные слова',
+    name: 'My learned words',
     type: SectionEnum.LEARNED_WORDS,
     route: RouteNames.LEARNED_WORDS,
   },
@@ -81,9 +81,9 @@ export const pointsPerWord = 10;
 export const Games = [
   {
     id: 0,
-    title: 'Спринт',
-    description: 'Проверь насколько хорошо ты знаешь перевод английских слов. За ограниченный период времени тебе необходимо дать как можно больше правильных ответов.',
-    rules: 'Твоя задача - определить правильность перевода английского слова.',
+    title: 'Sprint',
+    description: 'Check how well you know the translation of English words. You will have 30 seconds to give as many right answers as possible.',
+    rules: 'Your task - check if the translation is right or wrong.',
     img: '../../assets/img/background/audiocall-promo.jpg',
     link: RouteNames.SPRINT_GAME,
   }

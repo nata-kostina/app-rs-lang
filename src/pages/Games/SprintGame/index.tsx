@@ -51,12 +51,12 @@ const SprintGame = () => {
   return (
     <section className={'section-sprint-game'}>
       <SparkleAnimation />
-      <button type="button" className={`${'btn'} ${'btn_new-game'}`} onClick={() => setPhaseAction(GamePhase.INIT)}>Новая игра</button>
+      <button type="button" className={`${'btn'} ${'btn_new-game'}`} onClick={() => setPhaseAction(GamePhase.INIT)}>New game</button>
       {phase === GamePhase.INIT && (state === GameMode.MENU_GAME ? <Levels /> : <OnStartPage />)}
       {phase === GamePhase.STARTED &&
         <div className='timer-container'>
           <Timer time={6000} onFinish={onFinish} />
-          <p className='timer-text'>Приготовься!</p>
+          <p className='timer-text'>Get Ready!</p>
         </div>
       }
       {phase === GamePhase.RUNNING && <GamePage setHasBeenFinished={setHasBeenFinished} />}

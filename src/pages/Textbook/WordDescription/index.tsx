@@ -52,7 +52,7 @@ const WordDescription = ({
       </span>
       <p className={styles['item__example_translation']}>{selectedWord.word.textExampleTranslate}</p>
       {isAuth && <>
-        <h5 className={styles['item__section']}>Статистика по играм</h5>
+        <h5 className={styles['item__section']}>Games Statistics</h5>
         {Games.map((game) => {
           return (<div key={game.id}>
             <p className={styles['game__title']}>{game.title}</p>

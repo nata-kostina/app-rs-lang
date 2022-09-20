@@ -61,9 +61,9 @@ const GameWordCard = ({ word, setCurrentWordIndex }: WordCardProps) => {
       <h4 className={'card__translation'}>{word.translation}</h4>
       <div className={'card__controls'}>
         <button type="button" className={`${'btn'} ${'btn_answer'}`}
-          onClick={() => onbtnClick(ButtonType.WRONG)}>Неверно</button>
+          onClick={() => onbtnClick(ButtonType.WRONG)}>Wrong</button>
         <button type="button" className={`${'btn'} ${'btn_answer'}`}
-          onClick={() => onbtnClick(ButtonType.RIGHT)}>Верно</button>
+          onClick={() => onbtnClick(ButtonType.RIGHT)}>Right</button>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const Levels = () => {
   }; 
   return (
     <div className={'levels'}>
-      <p className={'levels__title'}>Выбери уровень сложности</p>
+      <p className={'levels__title'}>Choose a level</p>
       <Radio.Group onChange={onChange} value={value} className={'radio-group'}>
         <Radio value={0} className={'radio-value'}>Extra Easy</Radio>
         <Radio value={1} className={'radio-value'}>Easy</Radio>

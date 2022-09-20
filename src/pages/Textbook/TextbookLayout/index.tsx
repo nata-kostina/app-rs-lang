@@ -24,7 +24,7 @@ const items: MenuProps['items'] = [
       <Link
         className={`nav__item`}
         to={RouteNames.TEXTBOOK}
-      >Учебник</Link>
+      >Textbook</Link>
     ),
     key: RouteNames.TEXTBOOK.replaceAll('/', ''),
   },
@@ -70,7 +70,7 @@ const TextbookLayout = () => {
     setCurrent(e.key);
   };
   return (
-    <LayoutWithIntro title={'Учебник'}>
+    <LayoutWithIntro title={'Textbook'}>
       <>
         <Container>
           <>

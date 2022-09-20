@@ -45,19 +45,19 @@ const Statistics = () => {
     fetchStatistics();
   }, [user])
   return (
-    <LayoutWithIntro title={'Статистика'}>
+    <LayoutWithIntro title={'Statistics'}>
       <div className={styles['section-statistics']}>
         <img src={patternBulb} alt="" className={styles["pattern-bulb"]} />
         {!isLoading ? <>
           <Container>
-            <SectionTitle title='Статистика за сегодня' />
+            <SectionTitle title='Statistics today' />
           </Container>
           <div className={styles['tape']}>
             <Container>
               <TodayStatistics stats={todayStats} />
             </Container>
           </div>
-          <Section title='Статистика по играм'>
+          <Section title='Games Statistics'>
             <GameStatistics todayStats={todayStats} />
           </Section>
         </> :

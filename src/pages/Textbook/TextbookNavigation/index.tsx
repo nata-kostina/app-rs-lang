@@ -22,7 +22,7 @@ const TextbookNavigation = () => {
     <section className={`${styles.section} ${styles['section-unit-nav']}`}>
       <Container>
         <div className={`${styles.section} ${styles['section__inner']}`}>
-          <SectionTitle title={'Выбери раздел'} />
+          <SectionTitle title={'Choose a Unit'} />
           <div className={styles['swiper-container']}>
             <CustomSwiper slides={slides} />
           </div>

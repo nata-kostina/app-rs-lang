@@ -12,7 +12,7 @@ import getStatisticsActions from './StatisticsActions';
 import './styles.scss';
 
 const GameStatistics = () => {
-  const [value, setValue] = useState<string | number>('Результат');
+  const [value, setValue] = useState<string | number>('Results');
   const navigate = useNavigate();
   const { phase, maxsequence, gameWords, usedWords, date, dailyStats,
     learnedWords, failedWords } = useAppSelector((state) => state.game);
@@ -43,13 +43,13 @@ const GameStatistics = () => {
   return (
     <div className={'statistics'}>
       <div className={'statistics__content'}>
-        <Segmented options={['Результат', 'Посмотреть слова']} value={value} onChange={(value) => changePage(value)} />
-        {value === 'Результат' && <ResultCard />}
-        {value === 'Посмотреть слова' && <LearnedWords />}
+        <Segmented options={['Results', 'Words']} value={value} onChange={(value) => changePage(value)} />
+        {value === 'Results' && <ResultCard />}
+        {value === 'Words' && <LearnedWords />}
       </div>
       <div className={'statistics__controls'}>
-        <button className={`${'btn'} ${'btn_new-game'}`} type="button" onClick={startNewGame}>Новая игра</button>
-        <button className={`${'btn'} ${'btn_textbook'}`} type="button" onClick={redirectToTextbook}>Перейти в учебник</button>
+        <button className={`${'btn'} ${'btn_new-game'}`} type="button" onClick={startNewGame}>New game</button>
+        <button className={`${'btn'} ${'btn_textbook'}`} type="button" onClick={redirectToTextbook}>Go to Textbook</button>
       </div>
 
     </div>

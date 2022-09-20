@@ -22,9 +22,9 @@ const GameModal = (props: any) => {
         <div className={styles["flex-block-around"]}>
           <div className={styles.header}>Результаты</div>
         </div>
-        <div>{`Правильно: ${correctW.length}`}</div>
-        <div>{`Ошибок: ${wrongW.length}`}</div>
-        <div>{`Пропущено: ${20 - correctW.length - wrongW.length}`}</div>
+        <div>{`Guessed: ${correctW.length}`}</div>
+        <div>{`Errors: ${wrongW.length}`}</div>
+        <div>{`Missed: ${20 - correctW.length - wrongW.length}`}</div>
         <div>Вы повторили {correctW.length + wrongW.length}</div>
 
         <div className={styles.close} onClick={closeHandler}>

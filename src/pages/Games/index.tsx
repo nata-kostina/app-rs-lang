@@ -13,7 +13,7 @@ const Games = () => {
     <Wrapper>
       <>
         <Header />
-        {location.pathname === RouteNames.GAMES &&  <Intro title={'Игры'}/>}       
+        {location.pathname === RouteNames.GAMES &&  <Intro title={'Games'}/>}       
         <Main>
             <Outlet />
         </Main>

@@ -18,7 +18,7 @@ const GamesNavigation = ({ state }: { state: GameMode }) => {
         transition={{ repeat: Infinity, duration: 4, repeatType: "mirror" }}
       />
       <img className={`${styles["pattern-stars"]}`} src={PatternStars} alt='' />
-      <Section title={"Выбери игру"}>
+      <Section title={"Choose a game"}>
         <>
           <ul className={`${styles["nav"]}`}>
             {Games.map((game) => {
@@ -26,7 +26,7 @@ const GamesNavigation = ({ state }: { state: GameMode }) => {
                 <li className={`${styles["nav__item"]}`}>
                   <h3>{game.title}</h3>
                   <p>{game.description}</p>
-                  <Link to={`${RouteNames.GAMES}/${game.link}`} state={state}>Поехали!</Link>
+                  <Link to={`${RouteNames.GAMES}/${game.link}`} state={state}>Go!</Link>
                 </li>
               );
             })}

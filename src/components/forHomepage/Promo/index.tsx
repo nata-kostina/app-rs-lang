@@ -25,11 +25,10 @@ const Hero = () => {
         <div className={styles.wrapper}>
           <div style={{ margin: "12rem 0 3rem" }}>
             <ColorSubTitle width='120' height='40' color='#ffffff'>
-              Почему Выбирают RS Lang
+              Why to choose RS Lang
             </ColorSubTitle>
             <div style={{ margin: "2rem" }}></div>
-            <h2 className={styles.title}> Узнайте прямо сейчас,</h2>
-            <h2 className={styles.title}>почему люди любят учить английский в RS Lang</h2>
+            <h2 className={styles.title}>Why do people like learning English in RS Lang</h2>
           </div>
           <div className={styles["flex-center"]}>
             <motion.div
@@ -41,11 +40,11 @@ const Hero = () => {
               <WhiteBgFlag width='250' height='350'>
                 <div                >
                   <h4 className={styles.smalltitle} style={{ color: "#1ab9ff" }}>
-                    Oдин из наиболее распространённых языков в мире
+                    One of the most popular languages in the world
                   </h4>
                   <p>
-                    Каждый пятый человек в мире говорит или понимает его. Английский является официальным или одним из основных
-                    языков общения в более чем 50 странах.
+                    Every fifth person in the world speaks or understands it. English is official or one of the main
+                    spoken languages in more than 50 countries.
                   </p>
                 </div>
               </WhiteBgFlag>
@@ -59,11 +58,11 @@ const Hero = () => {
               <WhiteBgFlag width='250' height='350'>
                 <div>
                   <h4 className={styles.smalltitle} style={{ color: "#1ab9ff" }}>
-                    Открывает перед тобой новые возможности
+                    Brings you new possibilities
                   </h4>
                   <p>
-                    Английский – язык бизнеса. Знание языка увеличивает твои шансы получить хорошую работу или начать работать
-                    за границей, так что начинай учиться прямо сейчас!
+                    English is the language of business. It increases your chances of getting a good job or starting a job
+                    abroad, so start studying now!
                   </p>
                 </div>
               </WhiteBgFlag>
@@ -77,9 +76,9 @@ const Hero = () => {
               <WhiteBgFlag width='250' height='350'>
                 <div>
                   <h4 className={styles.smalltitle} style={{ color: "#1ab9ff" }}>
-                    На английском языке написаны величайшие произведения мировой литературы и науки
+                    The greatest works of world literature and science are written in English
                   </h4>
-                  <p>Может быть, тебе всегда хотелось прочесть книги великих английских писателей в оригинале?</p>
+                  <p>Do you want to read the books of great English writers in the original?</p>
                 </div>
               </WhiteBgFlag>
             </motion.div>

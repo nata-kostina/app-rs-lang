@@ -6,8 +6,8 @@ const ResultCard = () => {
   const { points, percentage } = useAppSelector((state) => state.game);
   return (
     <div className='results'>
-      <p className='results__text'>Твой результат:</p>
-      <span className='results__points'>{points} баллов</span>
+      <p className='results__text'>Your result:</p>
+      <span className='results__points'>{points} points</span>
       <div className='results__progress'>
         <Progress
           type="circle"
