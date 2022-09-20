@@ -2,7 +2,7 @@
 This is an application created for Russian speakers to learn English. The app includes a database of 3600 words, mini-games and a statistics page.
 
 ## Demo
-Here is a working live demo: https://rslang-nata-kostina.netlify.app/
+Here is a working live demo: https://my-rslang.netlify.app/
 
 ## Features
 
@@ -15,9 +15,10 @@ Here is a working live demo: https://rslang-nata-kostina.netlify.app/
  
 ## Tech stack
 
- - Typescript
- - React + Redux
- - Sass
+ - [Typescript](https://www.typescriptlang.org/) - a strongly typed programming language that builds on JavaScript.
+ - [React](https://reactjs.org/) - a JavaScript library for building user interfaces.
+  - [Redux](https://redux.js.org/) - a state container for JS apps.
+ - [Sass](https://sass-lang.com/) - a preprocessor scripting language that is interpreted or compiled into CSS.
 
 ## Libraries
 
