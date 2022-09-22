@@ -33,12 +33,12 @@ const NavigationItem = ({ item, path }: NavigationItemProps) => {
           </div>
           <ul className={styles['description-list']}>
             <li className={styles['list__item']}>
-
+{/* 
               {item.wordsNum.endsWith('1') && <>
                 <img src={BookSVG} className={styles['icon']} alt='book icon' />
-                <p>{item.wordsNum} слово</p>
+                <p>{item.wordsNum} words</p>
               </>
-              }
+              } */}
               {Number(item.wordsNum) > 1 && <>
                 <img src={BookSVG} className={styles['icon']} alt='book icon' />
                 <p>{item.wordsNum} слов</p>

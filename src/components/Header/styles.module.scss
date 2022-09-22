@@ -23,9 +23,11 @@
 .logo-box {
   display: flex;
   height: 60px;
+  width: 200px;
 }
 
 .logo__text {
+  flex-shrink: 0;
   color: #FFFFFF;
   font-size: 36px;
   padding: 0px;
@@ -33,8 +35,12 @@
   padding-left: 3px;
 }
 .logo__icon {
-  height: 100%;
-  
+  width: 60px;
+  max-height: 50px;
+  background-image: url(../../assets/img/logo/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 1200px) {
 

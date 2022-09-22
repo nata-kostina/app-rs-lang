@@ -8,6 +8,7 @@
   background: none;
   border: none;
   margin: 0 4px;
+  padding: 4px;
 
   width: 30px;
   height: 30px;
@@ -20,16 +21,12 @@
     object-fit: contain;
   }
 
+  & svg {
+    width: 100%;
+    height: auto;
+  }
 
   &:hover {
     cursor: pointer;
   }
-}
-
-.btn_difficult-word {
-  img {
-  }
-}
-
-.btn_delete {
 }

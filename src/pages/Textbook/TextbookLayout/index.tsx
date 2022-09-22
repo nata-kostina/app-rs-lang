@@ -5,15 +5,15 @@ import { Link, Outlet } from 'react-router-dom';
 import Container from '../../../components/Container';
 import LayoutWithIntro from '../../../components/LayoutWithIntro';
 import { RouteNames } from '../../../router';
-import './styles.scss';
 import type { MenuProps } from 'antd';
 import { useAppSelector } from './../../../hooks/useAppSelector';
 import InfoSvg from '../../../assets/img/icons/info.svg';
+import './styles.scss';
 
 const content = (
   <ul className='pop-over__content'>
-    <li>Сложные слова выделены красным цветом</li>
-    <li>Горящая лампочка означает, что слово добавлено в раздел "Изученные слова"</li>
+    <li>Difficult words are highlighted in red.</li>
+    <li>Burning bulb means that a word is added to "Learned Words".</li>
   </ul>
 );
 
@@ -34,7 +34,7 @@ const authItems = [
   ...items,
   {
     label: (
-      <p className={`nav__item`}>Мой словарь</p>
+      <p className={`nav__item`}>My dictionary</p>
     ),
     key: '1',
     children: [
@@ -44,7 +44,7 @@ const authItems = [
           <Link
             className={`nav__item`}
             to={RouteNames.DIFFICULT_WORDS}
-          >Мои сложные слова</Link>
+          >My difficult words</Link>
         ),
       },
       {
@@ -53,7 +53,7 @@ const authItems = [
           <Link
             className={`nav__item`}
             to={`${RouteNames.LEARNED_WORDS}`}
-          >Мои изученные слова</Link>
+          >My learned words</Link>
         ),
       },
     ],
@@ -84,9 +84,7 @@ const TextbookLayout = () => {
                 <Popover className='custom-pop-over' content={content} trigger="hover">
                   <img className={'info-icon'} src={InfoSvg} alt={'info icon'} />
                 </Popover>}
-
             </div>
-
           </>
         </Container>
         <Outlet />

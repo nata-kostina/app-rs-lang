@@ -1,14 +1,10 @@
 import React from 'react';
 import { DisplayedWord, IUser } from '../../../types/types';
 import styles from './styles.module.scss';
-import DifficultWordSVG from '../../../assets/img/words/graduation-cap.svg';
-import DeleteSVG from '../../../assets/img/words/delete-icon.svg';
-import { IUserWord } from './../../../types/types';
-import BulbOn from '../../../assets/img/words/bulb-on.svg';
-import BulbOff from '../../../assets/img/words/bulb-off.svg';
-import WordsActions from './../wordsActions';
 import { getDictActionsType } from '../Dictionary/dictionaryActions';
 import { useAppSelector } from '../../../hooks/useAppSelector';
+import { FaGraduationCap, FaTrashAlt } from 'react-icons/fa';
+import { AiTwotoneBulb } from 'react-icons/ai';
 
 interface ControlBar {
   word: DisplayedWord,
@@ -29,26 +25,26 @@ const ControlBar = ({ word, dictActions }: ControlBar) => {
           <button
             type="button"
             className={`${styles['btn']} ${styles['btn_delete']}`}
-            title='Убрать из раздела "Сложные слова"'
+            title='Remove from "Difficult words"'
             onClick={(e) => {
               e.stopPropagation();
               dictActions.removeFromDifficultWords({ id: word.word.id, word: word.word.word, user: user as IUser });
             }}
           >
-            <img src={DeleteSVG} alt='delete icon' />
+            <FaTrashAlt />
           </button>
           :
           <button
             type="button"
             className={`${styles['btn']} ${styles['btn_add']}`}
-            title='Добавить в раздел "Сложные слова"'
+            title='Add to "Difficult words"'
             onClick={(e) => {
               e.stopPropagation();
               dictActions.addToDifficultWords({ id: word.word.id, word: word.word.word, user: user as IUser })
             }
             }
           >
-            <img src={DifficultWordSVG} alt='graduation cap' />
+            <FaGraduationCap />
           </button>
       }
 
@@ -57,19 +53,19 @@ const ControlBar = ({ word, dictActions }: ControlBar) => {
           <button
             type="button"
             className={`${styles['btn']} ${styles['btn_learned_delete']}`}
-            title='Убрать из раздела "Изученные слова"'
+            title='Delete from "Learned words"'
             onClick={(e) => {
               e.stopPropagation();
               dictActions.removeFromLearnedWords({ id: word.word.id, word: word.word.word, user: user as IUser });
             }}
           >
-            <img src={BulbOn} alt='bulb on' />
+            <AiTwotoneBulb color={'#bec71d'}/>
           </button>
           :
           <button
             type="button"
             className={`${styles['btn']} ${styles['btn_learned_add']}`}
-            title='Добавить в раздел "Изученные слова"'
+            title='Add to "Learned words"'
             onClick={(e) => {
               e.stopPropagation();
               const isDifficultValue = word.userWord?.optional?.isDifficult;
@@ -77,7 +73,7 @@ const ControlBar = ({ word, dictActions }: ControlBar) => {
               dictActions.addToLearnedWords({ id: word.word.id, word: word.word.word, user: user as IUser, isDifficult });
             }}
           >
-            <img src={BulbOff} alt='bulb off' />
+            <AiTwotoneBulb />
           </button>
       }
     </div>

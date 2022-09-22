@@ -19,26 +19,7 @@
   flex-grow: 1;
 }
 
-.rss-logo {
-  height: 48px;
-  width: 130px;
-  background-image: url("../../assets/img/icon/rs-school-js.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .year {
   font-size: 1.25rem;
   color: $primary-color1;
-}
-
-.rss-link {
-  display: block;
-  height: 100%;
-  width: 100%;
 }

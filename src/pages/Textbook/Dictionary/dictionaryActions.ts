@@ -28,10 +28,10 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
               _.set(w, 'userWord.optional.isDifficult', 'true');
             }
           });
-          Modal.showSuccessModal(`Слово ${word} добавлено в раздел "Сложные слова"`);
+          Modal.showSuccessModal(`The word "${word}" was added to "Difficult words"`);
         })
         .catch(() => {
-          Modal.showErrorModal(`Произошла ошибка. Слово ${word} не было добавлено в раздел "Сложные слова"`);
+          Modal.showErrorModal(`Error! The word "${word}" was not added to "Difficult words"`);
         })
         .finally(() => {
           setIsProcessing((prev) => !prev)
@@ -45,7 +45,7 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
         token: (user as IUser).token,
       })
         .then(() => {
-          Modal.showSuccessModal(`Слово ${word} удалено из раздела "Сложные слова"`);
+          Modal.showSuccessModal(`The word "${word}" was removed from "Difficult words"`);
           words.forEach((w) => {
             if (w.word.id === id) {
               _.set(w, 'userWord.optional.isDifficult', 'false');
@@ -56,7 +56,7 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
             setSelectedWord(null);
           }
         })
-        .catch(() => Modal.showErrorModal(`Произошла ошибка. Слово ${word} не было удалено из раздела "Сложные слова"`))
+        .catch(() => Modal.showErrorModal(`Error! The word "${word}" was not removed from "Difficult words"`))
         .finally(() => {
           setIsProcessing((prev) => !prev)
         });
@@ -77,10 +77,10 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
               // }
             }
           });
-          Modal.showSuccessModal(`Слово ${word} добавлено в раздел "Изученные слова"`);
+          Modal.showSuccessModal(`The word "${word}" was added to "Learned words"`);
         })
         .catch(() => {
-          Modal.showErrorModal(`Произошла ошибка. Слово ${word} не было добавлено в раздел "Изученные слова"`);
+          Modal.showErrorModal(`Error! The word "${word}" was not added to "Learned words"`);
         })
         .finally(() => {
           setIsProcessing((prev) => !prev)
@@ -94,7 +94,7 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
         token: (user as IUser).token,
       })
         .then(() => {
-          Modal.showSuccessModal(`Слово ${word} удалено из раздела "Изученные слова"`);
+          Modal.showSuccessModal(`The word "${word}" was removed from "Learned words"`);
           words.forEach((w) => {
             if (w.word.id === id) {
               _.set(w, 'userWord.optional.isLearned', 'false');
@@ -105,7 +105,7 @@ export const getDictActions = ({ setIsProcessing, words, setDictWords, setSelect
             setSelectedWord(null);
           }
         })
-        .catch(() => Modal.showErrorModal(`Произошла ошибка. Слово ${word} не было удалено из раздела "Изученные слова"`))
+        .catch(() => Modal.showErrorModal(`Error! The word "${word}" was not removed from "Learned words"`))
         .finally(() => {
           setIsProcessing((prev) => !prev)
         });
